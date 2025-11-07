@@ -8,22 +8,37 @@ It allows users to view, grant, revoke, and eventually audit access to their dat
 🌟 Features
 
 ✅ Unified Consent Dashboard — Manage permissions for all connected apps in one place.
+
 ✅ Grant / Revoke Access — Real-time control with a single click.
+
 ✅ Service Directory — Easily add or seed demo services.
+
 ✅ Audit Trail (Future Feature) — Record “data-use receipts” for every access event.
+
 ✅ Professional UI — Clean, responsive React interface with glassmorphism styling.
+
 ✅ Containerized Setup — Run the entire stack with one command via Docker.
 
 🧱 Tech Stack
+
 Layer	Technology	Purpose
+
 Frontend	React + Vite	Responsive user dashboard
+
 Backend	Node.js (TypeScript) + Express	REST API for services and consents
+
 Database	PostgreSQL	Stores users, services, and consent data
+
 DevOps	Docker & Docker Compose	One-command local setup
+
 Validation	Zod	Type-safe input validation
+
 ORM / Query	pg (node-postgres)	Database queries
+
 Version Control	Git + GitHub	Source management and CI/CD
+
 🖥️ Demo Preview
+
 Dashboard	Grant Access	Revoke Access
 
 	
@@ -70,27 +85,6 @@ npm run dev
 
 Then open http://localhost:5173
 
-🗂️ Project Structure
-consenthub/
-│
-├── backend/
-│   ├── src/
-│   │   ├── index.ts          # Entry point (Express app)
-│   │   ├── db.ts             # Database connection & migration
-│   │   └── routes/           # API routes for consents & services
-│   ├── package.json
-│   └── tsconfig.json
-│
-├── frontend/
-│   ├── src/
-│   │   ├── App.jsx           # React UI
-│   │   └── main.jsx
-│   ├── vite.config.js
-│   └── package.json
-│
-├── docker-compose.yml         # Multi-container setup
-└── README.md
-
 🧠 How It Works
 
 Frontend sends API calls to the backend using Axios.
@@ -106,14 +100,23 @@ consents: Who granted what access
 receipts: (planned) Audit records for data access events
 
 🔒 Future Enhancements
+
 Feature	Description
+
 🕒 Time-limited consents	Auto-revoke after expiry
+
 🧾 Data-use receipts	Track when and how data is accessed
+
 🔑 OAuth Proxy Integration	Real-world API authorization
+
 📊 Analytics Dashboard	Privacy metrics with differential privacy
+
 📩 Email Notifications	Alerts for unusual access or expiry
+
 🧪 Testing
+
 # In backend/
+
 npm run test
 
 
