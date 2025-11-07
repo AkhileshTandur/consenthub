@@ -40,6 +40,7 @@ Version Control	Git + GitHub	Source management and CI/CD
 🖥️ Demo Preview
 
 Dashboard	Grant Access	Revoke Access
+<img width="1877" height="1003" alt="image" src="https://github.com/user-attachments/assets/ca8acde5-4c88-4559-a86e-a8c47d49b39c" />
 
 	
 	
